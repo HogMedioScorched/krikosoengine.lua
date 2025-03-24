@@ -1,0 +1,56 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Krikoso Engine API</title>
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/theme.css">
+		<link rel="icon" href="../assets/icon.png" type="image">
+	</head>
+
+	<body>
+
+
+		<!-- Create Search Bar and Theme Boxes-->
+		<div class="sidebar"></div>
+		<div class="themeBox" onclick="switchTheme()">
+			<div class="themeDot"></div>
+			<div class="themeDot" style="margin-left: 70px"></div>
+			<button class="themeBtn" id="themeSelector"></button>
+		</div>
+
+		<!-- Load JavaScript-->
+		<script src="../js/selector.js"></script>
+		<script>createSidebarContent();</script>
+		<script src="../js/searchbar.js"></script>
+		<script src="../js/theme.js"></script>
+		
+		<!-- Header -->
+		<div class="headerbox">
+			<div class="header">
+				<a href="../index.html">
+					<img width="64" src="../assets/icon.png" alt="Krikoso Engine Logo" draggable="false">
+					<div class="headertext">Krikoso Engine API</div>
+				</a>
+			</div>
+		</div>
+		
+		<!-- Page Info -->
+		<div class="infobox">
+			<h1>Variables</h1>
+			<h2>[BOOL] isKrikosoLua</h2>
+			<p>This variable is to check if the script is running on Krikoso Engine or Other engine</p>
+			<p>Example:</p>
+			<li class="exampleitem"><span class="methodexample">
+				function onStartCountdown()
+				    if isKrikosoLua == false then
+				        debugPrint('Sorry buddy, this script is for Krikoso Engine.')
+				        debugPrint('https://github.com/HogMedioScorched/FNF-KrikosoEngine/')
+	           		        return Function_Stop;
+				    end
+				end
+			</span>
+		</div>
+	</body>
+</html>
