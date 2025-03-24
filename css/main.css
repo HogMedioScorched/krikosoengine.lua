@@ -9,7 +9,7 @@
 *
 {
  	font-family: 'Franklin Gothic Book', 'Calibri';
-	scroll-padding-top: 90px;
+	scroll-padding-top: 500px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,13 +22,6 @@
 hr
 {
 	border-color: lightslategray;
-}
-
-.logoImage
-{
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 20px;
 }
 
 .infobox
